@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.9"/>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Controllers\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\EntityFrameworkCosmos.Data\EntityFrameworkCosmos.Data.csproj" />
+      <ProjectReference Include="..\MicrosoftCosmos.Data\MicrosoftCosmos.Data.csproj" />
+      <ProjectReference Include="..\MongoDb.Data\MongoDb.Data.csproj" />
+    </ItemGroup>
+
+</Project>

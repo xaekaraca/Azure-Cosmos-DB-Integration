@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosDbEntegrasyon.Api", "CosmosDbEntegrasyon.Api\CosmosDbEntegrasyon.Api.csproj", "{6712732C-8B80-4EB8-A655-D95A97665D78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkCosmos.Data", "EntityFrameworkCosmos.Data\EntityFrameworkCosmos.Data.csproj", "{34D5C9D5-B596-439C-9B6C-BC16BF1943F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrosoftCosmos.Data", "MicrosoftCosmos.Data\MicrosoftCosmos.Data.csproj", "{678E940B-147C-4225-9AE9-6D31EF0069BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDb.Data", "MongoDb.Data\MongoDb.Data.csproj", "{99E192CD-F5DC-49FB-B7C8-942AE1943501}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6712732C-8B80-4EB8-A655-D95A97665D78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6712732C-8B80-4EB8-A655-D95A97665D78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6712732C-8B80-4EB8-A655-D95A97665D78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6712732C-8B80-4EB8-A655-D95A97665D78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34D5C9D5-B596-439C-9B6C-BC16BF1943F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34D5C9D5-B596-439C-9B6C-BC16BF1943F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34D5C9D5-B596-439C-9B6C-BC16BF1943F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34D5C9D5-B596-439C-9B6C-BC16BF1943F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{678E940B-147C-4225-9AE9-6D31EF0069BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{678E940B-147C-4225-9AE9-6D31EF0069BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{678E940B-147C-4225-9AE9-6D31EF0069BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{678E940B-147C-4225-9AE9-6D31EF0069BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99E192CD-F5DC-49FB-B7C8-942AE1943501}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99E192CD-F5DC-49FB-B7C8-942AE1943501}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99E192CD-F5DC-49FB-B7C8-942AE1943501}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99E192CD-F5DC-49FB-B7C8-942AE1943501}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
