@@ -15,7 +15,7 @@ public class EntityFrameworkContext : DbContext
         
     }
 
-    public virtual DbSet<Information> Session { get; set; } = null!;
+    public virtual DbSet<Information> Information { get; set; } = null!;
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Information>().ToContainer(nameof(Information)).HasPartitionKey(x => x.CompanyId);
