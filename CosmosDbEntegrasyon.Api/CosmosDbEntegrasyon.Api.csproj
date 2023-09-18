@@ -12,10 +12,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Controllers\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\EntityFrameworkCosmos.Data\EntityFrameworkCosmos.Data.csproj" />
       <ProjectReference Include="..\MicrosoftCosmos.Data\MicrosoftCosmos.Data.csproj" />
       <ProjectReference Include="..\MongoDb.Data\MongoDb.Data.csproj" />

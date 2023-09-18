@@ -18,7 +18,7 @@ public class EntityFrameworkContext : DbContext
     public virtual DbSet<Information> Session { get; set; } = null!;
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Information>().ToContainer(nameof(Session)).HasPartitionKey(x => x.UserId);
+        modelBuilder.Entity<Information>().ToContainer(nameof(Information)).HasPartitionKey(x => x.CompanyId);
     }
     
     public override int SaveChanges(bool acceptAllChangesOnSuccess)
@@ -37,6 +37,17 @@ public class EntityFrameworkContext : DbContext
     {
         OnBeforeAddedEntities();
         OnBeforeModifiedEntities();
+        OnBeforeDeletedEntities();
+    }
+
+    protected virtual void OnBeforeDeletedEntities()
+    {
+        var deletedEntities = ChangeTracker.Entries().Where(e => e.State == EntityState.Deleted).ToList();
+        foreach (var item in deletedEntities.Where(item => item.Entity.GetType().GetProperty("IsDeleted") != null))
+        {
+            item.State = EntityState.Modified;
+            item.Property("IsDeleted").CurrentValue = true;
+        }
     }
 
     protected virtual void OnBeforeAddedEntities()

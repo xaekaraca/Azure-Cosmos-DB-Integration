@@ -15,9 +15,9 @@ public class MicrosoftCosmosContext
         _container = cosmosClient.GetContainer(cosmosSettings.Value.DatabaseName, containerName);
     }
     
-    public async Task<T> GetAsync<T>(long id, string partitionKey) where T : class
+    public async Task<T> GetAsync<T>(string id, string partitionKey) where T : class
     {
-        var response = await _container.ReadItemAsync<T>(id.ToString(), new PartitionKey(partitionKey));
+        var response = await _container.ReadItemAsync<T>(id, new PartitionKey(partitionKey));
         return response.Resource;
     }
     
@@ -43,6 +43,4 @@ public class MicrosoftCosmosContext
     {
         await _container.DeleteItemAsync<T>(id, new PartitionKey(partitionKey));
     }
-    
-    
 }

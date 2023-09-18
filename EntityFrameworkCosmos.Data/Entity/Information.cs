@@ -1,8 +1,11 @@
-﻿namespace EntityFrameworkCosmos.Data.Entity;
+﻿
+
+namespace EntityFrameworkCosmos.Data.Entity;
 
 public class Information
 {
-    public long UserId { get; set; }
+    public string UserId { get; set; } = null!;
+    public string CompanyId { get; set; } = null!;
     
     public string Email { get; set; } = null!;
     
