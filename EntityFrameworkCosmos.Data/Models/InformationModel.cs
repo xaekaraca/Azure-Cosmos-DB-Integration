@@ -1,4 +1,6 @@
-﻿namespace EntityFrameworkCosmos.Data.Models;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace EntityFrameworkCosmos.Data.Models;
 
 public class InformationViewModel
 {
@@ -18,12 +20,16 @@ public class InformationViewModel
 }
 public class InformationCreateModel
 {
+    [Required]
     public string CompanyId { get; set; } = null!;
     
+    [Required]
     public string Email { get; set; } = null!;
     
+    [Required]
     public string FirstName { get; set; } = null!;
     
+    [Required]
     public string LastName { get; set; } = null!;
 }
 public class InformationUpdateModel

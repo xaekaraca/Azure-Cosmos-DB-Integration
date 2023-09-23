@@ -37,3 +37,13 @@ g
 7EntityFrameworkCosmos.Data/Mappers/InformationMapper.cs,2\d\2d2adf4e73453d3f1209292ab70b85ed47923915
 l
 <CosmosDbEntegrasyon.Api/Controllers/InformationController.cs,1\3\13d3f71df90d9cb4408daa2845b68c346da6bb7e
+b
+2CosmosDbEntegrasyon.Api/Services/ProductService.cs,d\f\df7afe571b811a46a313f479f9e6aab42fbc6f8f
+[
++MicrosoftCosmos.Data/Models/ProductModel.cs,a\7\a7bb42571f1417238c1ac8e688abc05a7a19ec96
+V
+&MicrosoftCosmos.Data/Entity/Product.cs,a\2\a273cfc12316217a617fac953db81e0e20358c3a
+h
+8CosmosDbEntegrasyon.Api/Controllers/ProductController.cs,9\7\973d336abfaf1dfa76c79ddf190bfc42fcef3fb2
+\
+,MicrosoftCosmos.Data/Mapper/ProductMapper.cs,3\f\3f328433303cf55d135018bdcd36bffd7b2928a5

@@ -1,4 +1,5 @@
-﻿using CosmosDbEntegrasyon.Api.Services;
+﻿using System.ComponentModel.DataAnnotations;
+using CosmosDbEntegrasyon.Api.Services;
 using EntityFrameworkCosmos.Data.Mappers;
 using EntityFrameworkCosmos.Data.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -27,7 +28,7 @@ public class InformationController : ControllerBase
     }
     
     [HttpGet("{userId}")]
-    public async Task<IActionResult> GetAsync([FromRoute] string userId,[FromQuery] string companyId,CancellationToken cancellationToken = default)
+    public async Task<IActionResult> GetAsync([FromRoute] string userId,[FromQuery][Required] string companyId,CancellationToken cancellationToken = default)
     {
         var response = await _informationService.GetAsync(userId,companyId);
 
@@ -46,7 +47,7 @@ public class InformationController : ControllerBase
     }
     
     [HttpPut("{userId}")]
-    public async Task<IActionResult> UpdateAsync([FromRoute] string userId,[FromQuery] string companyId,[FromBody] InformationUpdateModel updateModel,CancellationToken cancellationToken = default)
+    public async Task<IActionResult> UpdateAsync([FromRoute] string userId,[FromQuery][Required] string companyId,[FromBody] InformationUpdateModel updateModel,CancellationToken cancellationToken = default)
     {
         var entity = await _informationService.GetAsync(userId,companyId);
         
@@ -59,7 +60,7 @@ public class InformationController : ControllerBase
     }
     
     [HttpDelete("{userId}")]
-    public async Task<IActionResult> DeleteAsync([FromRoute] string userId,[FromQuery] string companyId,CancellationToken cancellationToken = default)
+    public async Task<IActionResult> DeleteAsync([FromRoute] string userId,[FromQuery][Required] string companyId,CancellationToken cancellationToken = default)
     {
         await _informationService.DeleteAsync(userId,companyId,cancellationToken);
         

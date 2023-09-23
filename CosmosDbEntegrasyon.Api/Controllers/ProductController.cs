@@ -1,4 +1,5 @@
-﻿using CosmosDbEntegrasyon.Api.Services;
+﻿using System.ComponentModel.DataAnnotations;
+using CosmosDbEntegrasyon.Api.Services;
 using Microsoft.AspNetCore.Mvc;
 using MicrosoftCosmos.Data.Mapper;
 using MicrosoftCosmos.Data.Models;
@@ -33,7 +34,7 @@ public class ProductController : ControllerBase
     }
     
     [HttpGet("iterator")]
-    public async Task<IActionResult> GetAllWithIteratorAsync([FromQuery] string categoryId, CancellationToken cancellationToken = default)
+    public async Task<IActionResult> GetAllWithIteratorAsync([FromQuery][Required] string categoryId, CancellationToken cancellationToken = default)
     {
         var products = await _productService.GetAllWithIteratorAsync(categoryId, cancellationToken);
 
