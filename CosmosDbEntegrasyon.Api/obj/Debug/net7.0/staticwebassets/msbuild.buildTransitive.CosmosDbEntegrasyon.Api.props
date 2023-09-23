@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\CosmosDbEntegrasyon.Api.props" />
+</Project>

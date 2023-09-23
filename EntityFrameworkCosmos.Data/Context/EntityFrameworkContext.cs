@@ -5,14 +5,14 @@ namespace EntityFrameworkCosmos.Data.Context;
 
 public class EntityFrameworkContext : DbContext
 {
-    protected EntityFrameworkContext()
+    public EntityFrameworkContext()
     {
         
     }
     
-    protected EntityFrameworkContext(DbContextOptions options) : base(options)
+    public EntityFrameworkContext(DbContextOptions options) : base(options)
     {
-        
+        Database.EnsureCreated();
     }
 
     public virtual DbSet<Information> Information { get; set; } = null!;
@@ -68,7 +68,9 @@ public class EntityFrameworkContext : DbContext
         foreach (var item in editedEntities)
         {
             if (item.Entity.GetType().GetProperty("CreatedAt") != null)
-                item.Property("CreatedAt").CurrentValue = (DateTime)(item.Property("CreatedAt").OriginalValue ?? DateTime.MinValue) == DateTime.MinValue ? DateTime.UtcNow : item.Property("CreatedAt").OriginalValue;
+                item.Property("CreatedAt").CurrentValue = 
+                    (DateTime)(item.Property("CreatedAt").OriginalValue ??
+                               DateTime.MinValue) == DateTime.MinValue ? DateTime.UtcNow : item.Property("CreatedAt").OriginalValue;
 
             if (item.Entity.GetType().GetProperty("ChangedAt") != null)
                 item.Property("ChangedAt").CurrentValue = DateTime.UtcNow;

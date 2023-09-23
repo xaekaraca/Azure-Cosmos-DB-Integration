@@ -5,6 +5,10 @@ public class Constants
     public static readonly string[] ExcludedProperties = {
         "PageSize",
         "PageNumber",
-        "CompanyId"
+        "CompanyId",
+        "MinPrice",
+        "MaxPrice"
     };
+    
+    public static string ProductsContainerName = "Products";
 }

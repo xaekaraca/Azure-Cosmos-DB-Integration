@@ -1,4 +1,5 @@
 ﻿using System.Data;
+using CosmosDbEntegrasyon.Api.Services;
 using EntityFrameworkCosmos.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using MicrosoftCosmos.Data.Context;
@@ -24,7 +25,7 @@ public static class Bootstrapper
     
     public static void AddMicrosoftCosmosDb(this IServiceCollection services, IConfiguration configuration)
     {
-        services.AddSingleton<MicrosoftCosmosContext>();
+        //services.AddSingleton<MicrosoftCosmosContext>();
         
         services.Configure<CosmosSettings>(
             configuration.GetSection("MicrosoftCosmosSettings"));
@@ -37,4 +38,9 @@ public static class Bootstrapper
             configuration.GetSection("MongoDbSettings"));
     }
 
+    public static void AddBusinessServices(this IServiceCollection services)
+    {
+        services.AddScoped<InformationService>();
+        services.AddScoped<ProductService>();
+    }
 }

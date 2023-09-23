@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "fzW02fmT8XymiQaDq57tM0R8xBKW3MzzyM95rzNp/sw=",
+  "Source": "CosmosDbEntegrasyon.Api",
+  "BasePath": "_content/CosmosDbEntegrasyon.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

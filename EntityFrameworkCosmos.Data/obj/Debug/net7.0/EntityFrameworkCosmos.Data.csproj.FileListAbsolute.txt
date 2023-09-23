@@ -1,0 +1,14 @@
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\EntityFrameworkCosmos.Data\bin\Debug\net7.0\EntityFrameworkCosmos.Data.deps.json
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\EntityFrameworkCosmos.Data\bin\Debug\net7.0\EntityFrameworkCosmos.Data.runtimeconfig.json
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\EntityFrameworkCosmos.Data\bin\Debug\net7.0\EntityFrameworkCosmos.Data.dll
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\EntityFrameworkCosmos.Data\bin\Debug\net7.0\EntityFrameworkCosmos.Data.pdb
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\EntityFrameworkCosmos.Data\obj\Debug\net7.0\EntityFrameworkCosmos.Data.csproj.AssemblyReference.cache
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\EntityFrameworkCosmos.Data\obj\Debug\net7.0\EntityFrameworkCosmos.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\EntityFrameworkCosmos.Data\obj\Debug\net7.0\EntityFrameworkCosmos.Data.AssemblyInfoInputs.cache
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\EntityFrameworkCosmos.Data\obj\Debug\net7.0\EntityFrameworkCosmos.Data.AssemblyInfo.cs
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\EntityFrameworkCosmos.Data\obj\Debug\net7.0\EntityFrameworkCosmos.Data.csproj.CoreCompileInputs.cache
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\EntityFrameworkCosmos.Data\obj\Debug\net7.0\EntityFrameworkCosmos.Data.dll
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\EntityFrameworkCosmos.Data\obj\Debug\net7.0\refint\EntityFrameworkCosmos.Data.dll
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\EntityFrameworkCosmos.Data\obj\Debug\net7.0\EntityFrameworkCosmos.Data.pdb
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\EntityFrameworkCosmos.Data\obj\Debug\net7.0\EntityFrameworkCosmos.Data.genruntimeconfig.cache
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\EntityFrameworkCosmos.Data\obj\Debug\net7.0\ref\EntityFrameworkCosmos.Data.dll

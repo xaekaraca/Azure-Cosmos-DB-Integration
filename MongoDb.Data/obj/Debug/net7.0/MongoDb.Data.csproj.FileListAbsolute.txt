@@ -1,0 +1,12 @@
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\MongoDb.Data\bin\Debug\net7.0\MongoDb.Data.deps.json
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\MongoDb.Data\bin\Debug\net7.0\MongoDb.Data.dll
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\MongoDb.Data\bin\Debug\net7.0\MongoDb.Data.pdb
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\MongoDb.Data\obj\Debug\net7.0\MongoDb.Data.csproj.AssemblyReference.cache
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\MongoDb.Data\obj\Debug\net7.0\MongoDb.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\MongoDb.Data\obj\Debug\net7.0\MongoDb.Data.AssemblyInfoInputs.cache
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\MongoDb.Data\obj\Debug\net7.0\MongoDb.Data.AssemblyInfo.cs
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\MongoDb.Data\obj\Debug\net7.0\MongoDb.Data.csproj.CoreCompileInputs.cache
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\MongoDb.Data\obj\Debug\net7.0\MongoDb.Data.dll
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\MongoDb.Data\obj\Debug\net7.0\refint\MongoDb.Data.dll
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\MongoDb.Data\obj\Debug\net7.0\MongoDb.Data.pdb
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\MongoDb.Data\obj\Debug\net7.0\ref\MongoDb.Data.dll

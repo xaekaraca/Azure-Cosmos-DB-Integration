@@ -1,0 +1,17 @@
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\MicrosoftCosmos.Data\bin\Debug\net7.0\Microsoft.Azure.Cosmos.ServiceInterop.dll
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\MicrosoftCosmos.Data\bin\Debug\net7.0\Cosmos.CRTCompat.dll
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\MicrosoftCosmos.Data\bin\Debug\net7.0\msvcp140.dll
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\MicrosoftCosmos.Data\bin\Debug\net7.0\vcruntime140.dll
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\MicrosoftCosmos.Data\bin\Debug\net7.0\vcruntime140_1.dll
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\MicrosoftCosmos.Data\bin\Debug\net7.0\MicrosoftCosmos.Data.deps.json
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\MicrosoftCosmos.Data\bin\Debug\net7.0\MicrosoftCosmos.Data.dll
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\MicrosoftCosmos.Data\bin\Debug\net7.0\MicrosoftCosmos.Data.pdb
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\MicrosoftCosmos.Data\obj\Debug\net7.0\MicrosoftCosmos.Data.csproj.AssemblyReference.cache
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\MicrosoftCosmos.Data\obj\Debug\net7.0\MicrosoftCosmos.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\MicrosoftCosmos.Data\obj\Debug\net7.0\MicrosoftCosmos.Data.AssemblyInfoInputs.cache
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\MicrosoftCosmos.Data\obj\Debug\net7.0\MicrosoftCosmos.Data.AssemblyInfo.cs
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\MicrosoftCosmos.Data\obj\Debug\net7.0\MicrosoftCosmos.Data.csproj.CoreCompileInputs.cache
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\MicrosoftCosmos.Data\obj\Debug\net7.0\MicrosoftCosmos.Data.dll
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\MicrosoftCosmos.Data\obj\Debug\net7.0\refint\MicrosoftCosmos.Data.dll
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\MicrosoftCosmos.Data\obj\Debug\net7.0\MicrosoftCosmos.Data.pdb
+C:\Users\TR\RiderProjects\CosmosDbEntegrasyon\MicrosoftCosmos.Data\obj\Debug\net7.0\ref\MicrosoftCosmos.Data.dll

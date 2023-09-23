@@ -1,5 +1,5 @@
 ﻿using System.Linq.Expressions;
-using System.Reflection.Metadata;
+using EntityFrameworkCosmos.Data.Context;
 using EntityFrameworkCosmos.Data.Entity;
 using EntityFrameworkCosmos.Data.Mappers;
 using EntityFrameworkCosmos.Data.Models;
@@ -9,9 +9,9 @@ namespace CosmosDbEntegrasyon.Api.Services;
 
 public class InformationService
 {
-    private readonly DbContext _context;
+    private readonly EntityFrameworkContext _context;
 
-    public InformationService(DbContext context)
+    public InformationService(EntityFrameworkContext context)
     {
         _context = context;
     }

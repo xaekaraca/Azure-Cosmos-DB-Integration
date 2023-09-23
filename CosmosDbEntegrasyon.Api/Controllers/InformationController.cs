@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CosmosDbEntegrasyon.Api.Controllers;
 
+[ApiController]
+[Route("api/[controller]")]
 public class InformationController : ControllerBase
 {
     private readonly InformationService _informationService;
