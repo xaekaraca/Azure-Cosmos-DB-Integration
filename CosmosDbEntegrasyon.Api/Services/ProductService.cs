@@ -32,7 +32,7 @@ public class ProductService
     {
         var queryOptions = new QueryRequestOptions
         {
-            PartitionKey = queryFilterModel.CategoryId == null ? PartitionKey.None : new PartitionKey(queryFilterModel.CategoryId),
+            PartitionKey = queryFilterModel.CategoryId == null ? null : new PartitionKey(queryFilterModel.CategoryId),
             MaxItemCount = queryFilterModel.PageSize,
         };
 
