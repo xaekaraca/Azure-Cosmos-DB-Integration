@@ -106,7 +106,7 @@ public class ProductService
         await _container.ReplaceItemAsync(product, id, new PartitionKey(categoryId),cancellationToken: cancellationToken);
     }
     
-    private static IQueryable<Product> QuerySpesification(IQueryable<Product> query, ProductQueryFilterModel queryFilterModel)
+    private static IEnumerable<Product> QuerySpesification(IQueryable<Product> query, ProductQueryFilterModel queryFilterModel)
     {
         var properties = typeof(ProductQueryFilterModel).GetProperties();
 
