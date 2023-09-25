@@ -1,4 +1,6 @@
-﻿namespace MicrosoftCosmos.Data.Models;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace MicrosoftCosmos.Data.Models;
 
 public class ProductViewModel
 {
@@ -45,5 +47,5 @@ public class ProductQueryFilterModel
     
     public int? PageSize { get; set; }
     
-    public int? PageNumber { get; set; }
+    public string? ContinuationToken { get; set; }
 }

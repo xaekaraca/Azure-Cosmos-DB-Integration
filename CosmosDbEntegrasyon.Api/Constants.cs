@@ -7,7 +7,9 @@ public class Constants
         "PageNumber",
         "CompanyId",
         "MinPrice",
-        "MaxPrice"
+        "MaxPrice",
+        "CategoryId",
+        "ContinuationToken",
     };
     
     public static string ProductsContainerName = "Products";

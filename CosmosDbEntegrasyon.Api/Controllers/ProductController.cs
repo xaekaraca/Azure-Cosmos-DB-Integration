@@ -28,9 +28,15 @@ public class ProductController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> GetAllAsync([FromQuery] ProductQueryFilterModel queryFilterModel, CancellationToken cancellationToken = default)
     {
-        var products = await _productService.GetAllWithLinqAsync(queryFilterModel, cancellationToken);
+        var products =await _productService.GetAllWithLinqAsync(queryFilterModel, cancellationToken);
 
-        return Ok(products.ToViewModelList());
+        var result = new
+        {
+            productList = products.Results.ToViewModelList(),
+            continuationToken = products.ContinuationToken
+        };
+        
+        return Ok(result);
     }
     
     [HttpGet("iterator")]

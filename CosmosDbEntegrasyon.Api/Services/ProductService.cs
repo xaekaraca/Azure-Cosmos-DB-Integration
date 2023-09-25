@@ -1,11 +1,12 @@
 ﻿using System.Linq.Expressions;
 using Microsoft.Azure.Cosmos;
-using Microsoft.EntityFrameworkCore;
+using Microsoft.Azure.Cosmos.Linq;
 using Microsoft.Extensions.Options;
 using MicrosoftCosmos.Data.Entity;
 using MicrosoftCosmos.Data.Mapper;
 using MicrosoftCosmos.Data.Models;
 using MicrosoftCosmos.Data.Settings;
+using static System.Text.RegularExpressions.Regex;
 
 namespace CosmosDbEntegrasyon.Api.Services;
 
@@ -27,13 +28,34 @@ public class ProductService
         return response.Resource;
     }
 
-    public async Task<IEnumerable<Product>> GetAllWithLinqAsync(ProductQueryFilterModel queryFilterModel, CancellationToken cancellationToken = default)
+    public async Task<(IEnumerable<Product> Results, string ContinuationToken)> GetAllWithLinqAsync(ProductQueryFilterModel queryFilterModel, CancellationToken cancellationToken = default)
     {
-        var query = _container.GetItemLinqQueryable<Product>().AsQueryable();
+        var queryOptions = new QueryRequestOptions
+        {
+            PartitionKey = queryFilterModel.CategoryId == null ? PartitionKey.None : new PartitionKey(queryFilterModel.CategoryId),
+            MaxItemCount = queryFilterModel.PageSize,
+        };
 
-        query = QuerySpesification(query, queryFilterModel);
+        if (queryFilterModel.ContinuationToken!= null)
+            queryFilterModel.ContinuationToken = Unescape(queryFilterModel.ContinuationToken);
         
-        return await query.ToListAsync(cancellationToken);
+        var query = _container.GetItemLinqQueryable<Product>(false, queryFilterModel.ContinuationToken , queryOptions);
+
+        query = QuerySpesification(query, queryFilterModel) as IOrderedQueryable<Product>;
+
+        var iterator = query.ToFeedIterator();
+        var results = new List<Product>();
+    
+        var newContinuationToken = string.Empty;
+        
+        if (iterator.HasMoreResults)
+        {
+            var currentResultSet = await iterator.ReadNextAsync(cancellationToken);
+            newContinuationToken = currentResultSet.ContinuationToken;
+            results.AddRange(currentResultSet);
+        }
+
+        return (results, newContinuationToken);
     }
 
     public async Task<IEnumerable<Product>> GetAllWithIteratorAsync(string? categoryId,CancellationToken cancellationToken = default)
@@ -102,8 +124,6 @@ public class ProductService
         }
         
         query = ApplyPriceFilter(query, queryFilterModel.MinPrice, queryFilterModel.MaxPrice);
-        
-        query = ApplyPagination(query, queryFilterModel.PageNumber, queryFilterModel.PageSize);
 
         return query;
     }
@@ -157,13 +177,5 @@ public class ProductService
         var lambda = Expression.Lambda<Func<Product, bool>>(expression, parameter);
 
         return query.Where(lambda);
-    }
-    
-    private static IQueryable<Product> ApplyPagination(IQueryable<Product> query, int? pageNumber, int? pageSize)
-    {
-        if (pageNumber == null || pageSize == null)
-            return query;
-
-        return query.Skip((pageNumber.Value - 1) * pageSize.Value).Take(pageSize.Value);
     }
 }
